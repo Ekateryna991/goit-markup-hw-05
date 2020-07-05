@@ -617,8 +617,13 @@ a {
   position: relative;
 }
 
-.works:hover,
+.works:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .works:focus {
+  outline: red;
+  /* color: transparent; */
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -635,6 +640,8 @@ a {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+
+  position: relative;
 }
 
 .works-image {
@@ -777,7 +784,8 @@ a {
   transform: translateY(294px);
 }
 
-.works-list:hover .overlay {
+.works:hover .overlay,
+.works:focus .overlay {
   opacity: 1;
   transform: translateY(0px);
 }
